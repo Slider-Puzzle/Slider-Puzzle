@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings are the text used throughout the project. By keeping them
+    	 all in once place, it is easy to change them and to add other languages
+    	 that the same application can reference. Imagine having to go through
+    	 every file in the program to change the language to Chinese! -->
+    
+    <string name="app_name">Slider Puzzle</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_1">1</string>
+    <string name="button_2">2</string>
+    <string name="button_3">3</string>
+    <string name="button_4">4</string>
+    <string name="button_5">5</string>
+    <string name="button_6">6</string>
+    <string name="button_7">7</string>
+    <string name="button_8">8</string>
+    <string name="button_newGame">New Game</string>
+    <string name="newGameMessage">Tap a tile to slide it!</string>
+	<string name="playAgainMessage">You Win! Play again?</string>
+	
+</resources>

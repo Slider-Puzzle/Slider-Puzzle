@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- SLIDER TILES:
+    	
+    	These buttons simulate the tiles of the game board. The first 7
+    	have already been made for you. Your task is to finish the game
+    	board and add the final button!
+    	
+    	Scroll down to the bottom of the screen to see the code Android
+    	automatically created for your button. -->
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/button5"
+        android:layout_toLeftOf="@+id/button2"
+        android:text="@string/button_1"
+        android:onClick="clickSliderTile" />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/button_2"
+        android:onClick="clickSliderTile" />
+    
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/button5"
+        android:layout_toRightOf="@+id/button2"
+        android:text="@string/button_3"
+        android:onClick="clickSliderTile" />
+    
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toLeftOf="@+id/button5"
+        android:text="@string/button_4"
+        android:onClick="clickSliderTile" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_5"
+        android:onClick="clickSliderTile" />
+    
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toRightOf="@+id/button5"
+        android:text="@string/button_6"
+        android:onClick="clickSliderTile" />
+    
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/button5"
+        android:layout_toLeftOf="@+id/button5"
+        android:text="@string/button_7"
+        android:onClick="clickSliderTile" />
+    
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+		android:layout_below="@+id/button5"
+        android:layout_toRightOf="@+id/button5"
+        android:visibility="gone" 
+        android:onClick="clickSliderTile"
+        />
+        
+
+    <!-- INTEFACE CONTROLS:
+    
+    	The button to start a new game and the text box that
+    	shows messages and information to the user are designed here. -->
+
+    <Button
+        android:id="@+id/button_newGame"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_newGame"
+        android:onClick="clickNewGame"
+        />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_newGame"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newGameMessage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <!-- THE FINAL TILE:
+    
+    	The code for the button you added is below. We will need to change a few
+    	things to make the button work with the rest of the app! -->
+
+</RelativeLayout>
