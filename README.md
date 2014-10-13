@@ -23,7 +23,7 @@ Contact Information:
 
 If you have any questions, please contact:
 
-busliderpuzzle@gmail.com
+carlton.duffett@gmail.com
 
 Disclaimer:
 -------------
