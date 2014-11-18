@@ -226,6 +226,11 @@ public class Game {
 		locationsToCheck[2] = buttonClickedIndex - 1; // to left
 		locationsToCheck[3] = buttonClickedIndex + 1; // to right
 		
+		if (buttonClickedIndex == 2 || buttonClickedIndex == 5) {
+			// these buttons are special cases where buttonClickedIndex + 1 can actually be a free space
+			locationsToCheck[3] = -1; // negative index is automatically invalid
+		}
+		
 		// check the valid locations specified above
 		for (int i = 0; i < 4; i++)
 		{
@@ -235,10 +240,12 @@ public class Game {
 				if (buttons[locationsToCheck[i]].isShown() == false)
 				{
 					// button occupying location is invisible, e.g. empty space
+					emptyLocationIndex = locationsToCheck[i];
 					return locationsToCheck[i];
 				}
 			}			
 		}
+		emptyLocationIndex = -1;
 		return -1; // -1: flag for no empty locations found
 	}
 	
